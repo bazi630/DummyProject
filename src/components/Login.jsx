@@ -23,7 +23,7 @@ const handleSubmit = async (e) => {
   );
 
   if (!matchedUser) {
-    setError("Invalid email or password");
+    setError("Invalid  or password");
     setIsLoading(false);
     return;
   }
