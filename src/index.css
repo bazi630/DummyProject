@@ -1,0 +1,78 @@
+/* Import all stylesheets */
+
+@import url("./style/chat.css");
+
+@import url("./style/Auth.css");
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+  font-family: var(--wa-font-family);
+  background: var(--wa-dark);
+  color: var(--wa-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Selection */
+::selection {
+  background: rgba(0, 168, 132, 0.3);
+  color: var(--wa-text);
+}
+
+/* Focus Visible */
+:focus-visible {
+  outline: 2px solid var(--wa-primary);
+  outline-offset: 2px;
+}
+
+/* Disabled State */
+:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Utility Classes */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Prevent Text Selection on UI Elements */
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Glass Effect */
+.glass {
+  background: rgba(17, 27, 33, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(135deg, var(--wa-primary) 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
