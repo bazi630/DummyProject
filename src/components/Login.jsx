@@ -47,7 +47,8 @@ const handleSubmit = async (e) => {
           <div className="brand-icon">✦</div>
         </div>
         
-        <h2>Welcome back</h2>
+        
+        <h2>Welcome</h2>
         <p className="subtitle">Sign in to your account</p>
 
         <form onSubmit={handleSubmit}>
